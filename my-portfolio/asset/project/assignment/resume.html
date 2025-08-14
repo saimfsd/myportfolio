@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saim Kazi - Resume</title>
+
+    <!-- Font & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        .resume-header {
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #0061ff, #60efff);
+            color: #fff;
+        }
+
+        .resume-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            margin-right: 20px;
+        }
+
+        .resume-header h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .resume-header h3 {
+            font-weight: 400;
+            margin-top: 4px;
+        }
+
+        /* Sections */
+        .section {
+            padding: 25px 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #0061ff;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            width: 40px;
+            height: 3px;
+            background: #0061ff;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            border-radius: 2px;
+        }
+
+        .section p, .section li {
+            margin: 6px 0;
+            line-height: 1.5;
+        }
+
+        .contact-info p i {
+            margin-right: 8px;
+            color: #0061ff;
+        }
+
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background: #eaf3ff;
+            color: #0061ff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .resume-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .resume-header img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+
+    <!-- Header -->
+    <div class="resume-header">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQGrJKluZmvTJA/profile-displayphoto-shrink_200_200/B4EZX_hOBYGgAc-/0/1743748654013?e=1758153600&v=beta&t=j65oekwncafpY6a7-1QkWMxiW4ZC65Rw9_-tZELjOtg" alt="Saim Kazi">
+        <div>
+            <h1>Saim Kazi</h1>
+            <h3>Full Stack Developer</h3>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section contact-info">
+        <h2>Contact</h2>
+        <p><i class="fas fa-phone"></i> <a href="tel:9764090337">9764090337</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:saimquazi118@gmail.com">saimquazi118@gmail.com</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Amner</p>
+        <p><i class="fab fa-skype"></i> Available</p>
+    </div>
+
+    <!-- About -->
+    <div class="section">
+        <h2>About Me</h2>
+        <p>To obtain an entry-level position as a developer that will allow me to utilize my coding skills and creativity to create user-friendly and responsive websites. I have the ability to work with focus, complete involvement, and enthusiasm.</p>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Windows 10</span>
+            <span class="skill-badge">MacOS</span>
+            <span class="skill-badge">GitHub</span>
+            <span class="skill-badge">VS Code</span>
+            <span class="skill-badge">Android Studio</span>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <h2>Education</h2>
+        <p><b>Bachelor of Engineering</b> - Electrical Branch</p>
+    </div>
+
+    <!-- Languages -->
+    <div class="section">
+        <h2>Languages</h2>
+        <p>English, Marathi, Hindi</p>
+    </div>
+
+    <!-- Personal Skills -->
+    <div class="section">
+        <h2>Personal Skills</h2>
+        <ul>
+            <li>Outside-the-box thinker with creative problem-solving abilities.</li>
+            <li>Ability to focus and pursue a goal with dedication and drive.</li>
+            <li>Attention to detail in completing tasks like data entry.</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

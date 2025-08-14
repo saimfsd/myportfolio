@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 2.2em;
+            font-weight: bold;
+        }
+
+        .main-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product-one {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .product-one:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        .product-one img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-one h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+            color: #222;
+        }
+
+        .product-one p {
+            font-size: 1em;
+            color: #555;
+            font-weight: bold;
+        }
+
+        /* Price styling */
+        .price {
+            color: #ff5722;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🛒 Product Grid</h1>
+
+    <div class="main-container">
+        <div class="product-one">
+            <img src="https://rukminim3.flixcart.com/image/450/400/xif0q/allinone-desktop/4/c/7/-original-imah876yz5exvscq.jpeg?q=90&crop=false" alt="Desktop">
+            <h3>Desktop</h3>
+            <p class="price">$129</p>
+        </div>
+
+        <div class="product-one">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcmTRb4KTPULOj5QLvtUaJHIwYU6oieiSYw&s" alt="Laptop">
+            <h3>Laptop</h3>
+            <p class="price">$350</p>
+        </div>
+
+        <div class="product-one">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2021/2/HX/ZR/BV/31661333/cpu-500x500.jpg" alt="CPU">
+            <h3>CPU</h3>
+            <p class="price">$70</p>
+        </div>
+
+        <div class="product-one">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Commodore-64-Computer-FL.jpg/1200px-Commodore-64-Computer-FL.jpg" alt="Keyboard">
+            <h3>Keyboard</h3>
+            <p class="price">$15</p>
+        </div>
+
+        <div class="product-one">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIcg9MXJ1FkTtesVQbED-5fV7X5y0J-tyh7A&s" alt="RGB Disc">
+            <h3>RGB Disc</h3>
+            <p class="price">$29</p>
+        </div>
+
+        <div class="product-one">
+            <img src="https://img.pikbest.com/origin/06/44/93/45fpIkbEsT25K.jpg!f305cw" alt="Mouse">
+            <h3>Mouse</h3>
+            <p class="price">$2</p>
+        </div>
+
+        <div class="product-one">
+            <img src="https://cdn1.smartprix.com/rx-iwv4SfyWU-w1200-h1200/wv4SfyWU.webp" alt="Printer">
+            <h3>Printer</h3>
+            <p class="price">$15</p>
+        </div>
+
+        <div class="product-one">
+            <img src="https://m.media-amazon.com/images/I/713TUYjagQL.jpg" alt="Speaker">
+            <h3>Speaker</h3>
+            <p class="price">$5</p>
+        </div>
+
+        <div class="product-one">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2024/8/439908494/JU/QO/ZU/3770647/15957-490-image-0-500x500.jpg" alt="CCTV">
+            <h3>CCTV</h3>
+            <p class="price">$50</p>
+        </div>
+
+        <div class="product-one">
+            <img src="https://m.media-amazon.com/images/I/61+R5rOj9+L.jpg" alt="Headphone">
+            <h3>Headphone</h3>
+            <p class="price">$40</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ececec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        table {
+            width: 350px;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .first-row-td {
+            background-color: #222;
+            color: white;
+            font-size: 32px;
+            padding: 20px;
+            text-align: right;
+            height: 80px;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        td:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .gray-btn {
+            background-color: #f2f2f2;
+        }
+
+        .orange-btn {
+            background-color: orange;
+            color: white;
+        }
+
+        .orange-btn:hover {
+            background-color: darkorange;
+        }
+
+        .zero-btn {
+            text-align: left;
+            padding-left: 35px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- Display -->
+        <tr>
+            <td colspan="4" class="first-row-td">0</td>
+        </tr>
+        <!-- Row 1 -->
+        <tr>
+            <td class="gray-btn">AC</td>
+            <td class="gray-btn">+/-</td>
+            <td class="gray-btn">%</td>
+            <td class="orange-btn">÷</td>
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+            <td class="gray-btn">7</td>
+            <td class="gray-btn">8</td>
+            <td class="gray-btn">9</td>
+            <td class="orange-btn">×</td>
+        </tr>
+        <!-- Row 3 -->
+        <tr>
+            <td class="gray-btn">4</td>
+            <td class="gray-btn">5</td>
+            <td class="gray-btn">6</td>
+            <td class="orange-btn">−</td>
+        </tr>
+        <!-- Row 4 -->
+        <tr>
+            <td class="gray-btn">1</td>
+            <td class="gray-btn">2</td>
+            <td class="gray-btn">3</td>
+            <td class="orange-btn">+</td>
+        </tr>
+        <!-- Row 5 -->
+        <tr>
+            <td colspan="2" class="gray-btn zero-btn">0</td>
+            <td class="gray-btn">.</td>
+            <td class="orange-btn">=</td>
+        </tr>
+    </table>
+</body>
+</html>

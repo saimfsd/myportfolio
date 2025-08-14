@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Switch</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .main-container {
+            width: 400px;
+            padding: 30px;
+            background: white;
+            border: solid 2px black;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        }
+        button {
+            height: 50px;
+            width: 150px;
+            font-size: 18px;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin: 10px;
+        }
+        .on-btn {
+            background-color: green;
+        }
+        .on-btn:hover {
+            background-color: darkgreen;
+        }
+        .off-btn {
+            background-color: red;
+        }
+        .off-btn:hover {
+            background-color: darkred;
+        }
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-top: 20px;
+            transition: 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h2>💡 Bulb On/Off</h2>
+        <button class="on-btn" onclick="changeImage(true)">ON</button>
+        <button class="off-btn" onclick="changeImage(false)">OFF</button>
+        <br>
+        <img id="img" src="https://png.pngtree.com/thumb_back/fh260/background/20220315/pngtree-light-bulb-burning-in-the-night-breaking-energy-illuminated-photo-image_29914340.jpg" alt="Bulb">
+    </div>
+
+    <script>
+        function changeImage(isOn) {
+            const img = document.getElementById("img");
+            if (isOn) {
+                img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWedNAn1XFXAoGFaSiPx1PLE64Ykqz1Tf6csFvgB2nAH55-pXV";
+            } else {
+                img.src = "https://png.pngtree.com/thumb_back/fh260/background/20220315/pngtree-light-bulb-burning-in-the-night-breaking-energy-illuminated-photo-image_29914340.jpg";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking News</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .main-container {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            gap: 15px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .box-one {
+            background-color: rgb(13, 162, 13);
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            grid-column: 1 / 3;
+        }
+
+        .box-two {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+        }
+
+        .box-two h1 {
+            font-size: 26px;
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        .box-two h2 {
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .box-two img {
+            height: 250px;
+            width: 250px;
+            object-fit: cover;
+            float: left;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+
+        .box-three {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .box-three h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .box-three ul {
+            padding-left: 20px;
+        }
+
+        .box-four {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 8px;
+            grid-column: 1 / 3;
+        }
+
+        .box-four abbr {
+            text-decoration: none;
+            border-bottom: 1px dotted white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="box-one">Breaking News</div>
+
+        <div class="box-two">
+            <h1>U.S. Education Department to be dismantled: Here’s what the agency does, and why it drew Trump’s ire</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl4G6DK_oFyvIKRkueqtrx5J9308eMvpUWog&s"
+                alt="USA News">
+            <h2>President Donald Trump signed an executive order Thursday calling for a plan to shut down of the
+                Education Department, an agency Republicans have talked about closing for decades.</h2><br>
+            <h2>The order says Education Secretary Linda McMahon will, “to the maximum extent appropriate and permitted
+                by law, take all necessary steps to facilitate the closure of the Department of Education and return
+                authority over education to the States and local communities.”</h2>
+            <h2>Education Department manages approximately $1.5 trillion in student loan debt for over 40 million
+                borrowers. It also oversees the Pell Grant, which provides aid to students below a certain income
+                threshold, and administers the Free Application for Federal Student Aid (FAFSA), which universities
+                use to allocate financial aid.</h2>
+        </div>
+
+        <div class="box-three">
+            <h1>Related News</h1>
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
+            </ul>
+        </div>
+
+        <div class="box-four">
+            <h3>21 March, 2025 — News: Education Department Plan in United States <abbr title="United States of America">(USA)</abbr></h3>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input output assignment</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main.container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .header {
+            width: 100%;
+            height: 30%;
+            background-color: black;
+            color: white;
+            text-align: center;
+
+        }
+
+        .header-two {
+            width: 70%;
+            height: 80px;
+            color: white;
+            margin-left: 150px;
+            margin-bottom: 100px;
+            
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+
+            
+         
+        }
+        button{
+            height: 100px;
+            width: 150px;
+            background-color:darkblue;
+            color: white;
+            font-size: 30px
+        
+        }
+        button:hover{
+            background-color:red;
+        }
+
+        .box-one {
+            width: 80%;
+            height: 650px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 70px;
+            margin-top: 60px;
+            padding-top: 50px
+        }
+
+        .lang-code {
+            width: 100%;
+            height: 100%;
+            background-color: whitesmoke;
+            margin-left: 20px;
+
+        }
+
+        .output {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            margin-left: 40px;
+            color:white;
+
+
+        }
+
+        h1 {
+            margin-left: 20px;
+            
+        }
+
+        code {
+           font-size:20px;
+        }
+        p{
+            color: green;
+            padding-left: 30px;
+            font-size: 20px;
+        }
+    </style>
+
+<body>
+    <!--main-contani-->
+    <div class="main-container">
+        <div class="header">
+            <h1>Input /Output Programming</h1>
+
+        </div>
+        <div class="header-two">
+           <a href="#JAVA"> <Button>Java</Button></a>
+           <a href="#C-lang"> <Button>C</Button></a>
+      <a href="#Python"> <Button>Python</Button></a>     
+          <a href="#javascript"> <Button>Javascript</Button></a> 
+        </div>
+        <div class="box-one">
+            <div class="lang-code ">
+                <h1 id="JAVA">Java Input  </h1>
+                <br>
+                <br>
+                <br>
+<code>
+    
+    class Scratch 
+    <br>{
+        public static void main(String[] args) {
+            <br>
+            //length
+            <br>
+
+            int length = 60;
+            <br>
+            //width
+            <br>
+            int width = 40;
+            <br>
+            //perimeter
+            <br>
+            int perimeter = 2 * (length + width);
+            <br>
+            System.out.println("Enter length of rectangle is:
+             " + perimeter;);}
+        }
+        
+</code>
+            </div>
+            <div class="output">
+                <h1>Output</h1>
+                <hr>
+                <p>Enter length of rectangle is: 160;</p>
+
+            </div>
+        </div>
+        <div class="box-one">
+            <div class="lang-code ">
+                <h1 id="C-lang">C Input</h1>
+                <br>
+                <br>
+                <br>
+                <code>
+                    #include < /stdio.h>
+                    <br>
+                    //basic input output
+                    <br>
+                    int main(){
+                        <br>
+                    int input;
+                    <br>
+                    printf("Enter a number \n");
+                    scanf("%d",&input);
+                    <br>
+                    int sum = (input+input);
+                    <br>
+                    printf("Sum is %d",sum); }
+                </code>
+
+            </div>
+            <div class="output">
+                <h1> Output</h1>
+                <hr>
+                <p>
+                    Enter a number:
+                    <br>
+                    20
+                    <br>
+                    Sum is 40</p>
+            </div>
+        </div>
+        <div class="box-one">
+            <div class="lang-code ">
+                <h1 id="Python">Python Input</h1>
+                <br>
+                <br>
+                <br>
+<code>
+
+
+    # Basic  Python
+    <br>
+    name = input("Enter the name: ")
+    <br>
+    age = int(input("Enter the age: ")
+    <br>
+    print(f"Hii, {name}!")
+    <br>
+    
+    print(f"i am {age} years old.")
+    <br>
+    # Direct Assign
+    <br>
+    name = "Saim kazi"
+    <br>
+    age = 18
+    <br>
+    print(f"Hii, {name}!")
+    <br>
+    print(f" i am {age} years old.")
+    <br>
+          
+
+    
+    
+    
+  
+
+
+
+      
+</code>
+            </div>
+            <div class="output">
+                <h1>Output</h1>
+                <hr>
+                
+                <p>Enter the name: Saim kazi
+                    <br>
+                    Enter the age: 18
+                    <br>
+                    Hii,Saim kazi!
+                    <br>
+                    i am 18 years old.</p>
+                    <br>
+            </div>
+        </div>
+        <div class="box-one">
+            <div class="lang-code ">
+                <h1 id="javascript">Javascript</h1>
+                <br>
+                <br>
+                <br>
+<code>
+    let name = "Saim kazi ";
+    <br>
+    console.log(name);
+    <br>
+    alert(name);
+   
+    
+</code>
+            </div>
+            
+            <div class="output">
+                <h1>Output</h1>
+                <hr>
+                <p>Show the output 
+                    <br>
+                    1.Alert
+                    <br>
+                    2.console
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</head>
+
+<body>
+
+</body>
+
+</html>
