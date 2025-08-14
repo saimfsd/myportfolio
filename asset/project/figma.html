@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma design</title>
+</head>
+<style>
+    /* General Section Styles */
+    .project-section {
+        padding: 60px 40px;
+        background-color: #f7f7f7;
+        text-align: center;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+        color: #333;
+    }
+    
+    /* Grid Layout */
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+    
+    /* Individual Project Card */
+    .project-card {
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        padding: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    }
+    
+    .project-card img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        object-fit: cover;
+        height: 180px;
+    }
+    
+    .project-card h3 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+        color: #222;
+    }
+    
+    .project-card p {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 15px;
+        min-height: 50px;
+    }
+    
+    /* View Project Button */
+    .view-project {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff6b6b;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: background-color 0.3s;
+    }
+    
+    .view-project:hover {
+        background-color: #ff4757;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .project-section {
+            padding: 50px 20px;
+        }
+    }
+    </style>
+<body>
+    <section class="project-section" id="figma-projects">
+        <h2 class="section-title">Figma Projects</h2>
+        <div class="project-grid">
+    
+            <!-- Card 1: Taj Decoration -->
+            <div class="project-card">
+                <h3>Taj Decoration</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDmpCiYW-KAjLLJ_nHicvRMRlgqV8vWDD3OQ&s" alt="Taj Decoration Figma">
+                <p>UI/UX design for Taj Decoration website created in Figma with interactive prototype.</p>
+                <a href="https://www.figma.com/design/0KHZvpHe4IQu8XmmUNm5Pp/Untitled?node-id=12-2&t=1FGQsVm4N6x7CFTX-1" target="_blank" class="view-project"> View Design</a>
+            </div>
+    
+            <!-- Card 2: Jain Aluminium -->
+            <div class="project-card">
+                <h3>Jain Aluminium</h3>
+                <img src="https://mccoymart.com/post/wp-content/uploads/aluminium-kitchen-window.jpg" alt="Jain Aluminium Figma">
+                <p>Complete Figma UI/UX design for Jain Aluminium website with responsive layout and interactive components.</p>
+                <a href="https://www.figma.com/design/0KHZvpHe4IQu8XmmUNm5Pp/Untitled?node-id=0-1&t=8eu4tu5hf9cWVX5x-1" target="_blank" class="view-project">View Design</a>
+            </div>
+    
+        </div>
+    </section>
+</body>
+</html>
