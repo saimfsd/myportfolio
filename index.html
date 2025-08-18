@@ -8,16 +8,23 @@
 <link rel="stylesheet" href="./asset/css/index.css">
 </head>
 <body>
-  <nav id=>
-    <div class="logo">SK</div>
-    <ul id=>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#about">Skills</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <div class="logo">SK</div>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+  
+      <!-- Hamburger button -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
 
   <section class="hero" id="home">
     <h1>Hi, I'm <span>Saim Kazi</span></h1>
@@ -172,5 +179,10 @@
     </footer>
     
   </footer>
+  <script>  
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+  </script>
 </body>
 </html>

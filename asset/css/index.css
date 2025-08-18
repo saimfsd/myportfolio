@@ -1,55 +1,71 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b0c10;
+  color: white;
 }
 
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #0b0c10;
-    color: white;
-  
-  }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+}
 
-  nav {
-    position: fixed;         /* Make it fixed */
-top: 0;                  /* Stick it to top */
-left: 0;
-width: 100%;             /* Full width */
-z-index: 1000;           /* Stay above all elements */
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px 50px;
-background-color: rgba(0, 0, 0, 0.9);
-backdrop-filter: blur(10px);
-  }
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+  color: #00ffff;
+}
 
-  .logo {
-    font-size: 50px;
-    font-weight: bold;
-    color: #00ffff;
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+}
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 80px;
-  }
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
 
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
+nav ul li a:hover {
+  color: #00ff88;
+}
 
-  nav ul li a:hover {
-    color: #00ff88;
-  }
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 28px;
+  background: white;
+  margin: 5px 0;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+
 
   .hero {
     height: 100vh;
@@ -390,22 +406,50 @@ color: #777;
 margin-top: 30px;
 }
 
+/* Responsive */
 
-  @media (max-width: 768px) {
-    nav {
+  
+  @media (max-width: 730px) {
+    nav ul {
+      display: none; /* default hidden */
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 55px; /* header ke just niche khulega */
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      padding: 20px 0;
+      gap: 20px;
+      text-align: center;
+      z-index: 999;
     }
-
-    .hero h1 {
-      font-size: 28px;
+  
+    nav ul li a {
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
     }
-
-    .hero h2 {
-      font-size: 36px;
+  
+    nav ul.active {
+      display: flex; /* ✅ hamburger click pe show karega */
     }
-
-    .form-group {
+  
+    .hamburger {
+      display: flex;
       flex-direction: column;
+      cursor: pointer;
+      z-index: 1001;
+    }
+  
+    .hamburger span {
+      height: 3px;
+      width: 28px;
+      background: white;
+      margin: 5px 0;
+      border-radius: 3px;
     }
   }
