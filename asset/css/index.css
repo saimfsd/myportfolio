@@ -453,3 +453,109 @@ margin-top: 30px;
       border-radius: 3px;
     }
   }
+  /* ---------------- HERO TEXT ANIMATION ---------------- */
+
+.hero h1,
+.hero h2,
+.hero p{
+opacity:0;
+transform:translateY(40px);
+animation:heroFade 1s ease forwards;
+}
+
+.hero h1{
+animation-delay:0.3s;
+}
+
+.hero h2{
+animation-delay:0.6s;
+}
+
+.hero p{
+animation-delay:0.9s;
+}
+
+@keyframes heroFade{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* ---------------- NAVBAR UNDERLINE HOVER ---------------- */
+
+nav ul li a{
+position:relative;
+}
+
+nav ul li a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-5px;
+width:0;
+height:2px;
+background:#00ffcc;
+transition:width 0.3s ease;
+}
+
+nav ul li a:hover::after{
+width:100%;
+}
+
+/* ---------------- SKILL CARD FLOAT EFFECT ---------------- */
+
+.skill-card-dark{
+transition:transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.skill-card-dark:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 10px 35px rgba(102,252,241,0.3);
+}
+
+/* ---------------- PROJECT IMAGE ZOOM ---------------- */
+
+.project-card img{
+transition:transform 0.5s ease;
+}
+
+.project-card:hover img{
+transform:scale(1.1);
+}
+
+/* ---------------- SCROLL REVEAL ---------------- */
+
+.reveal{
+opacity:0;
+transform:translateY(60px);
+transition:all 0.8s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+/* ---------------- BACKGROUND GLOW EFFECT ---------------- */
+
+body::before{
+content:"";
+position:fixed;
+top:-200px;
+left:-200px;
+width:500px;
+height:500px;
+background:radial-gradient(circle,#00ffcc,transparent);
+animation:moveGlow 12s infinite alternate;
+z-index:-1;
+}
+
+@keyframes moveGlow{
+from{
+transform:translate(0,0);
+}
+to{
+transform:translate(200px,200px);
+}
+}
